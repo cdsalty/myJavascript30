@@ -21,3 +21,15 @@ ________________________________________________________________________________
   const audio = document.querySelector(audio[data- key=${e.keyCode}]`);
 }));
 ___________________________________________________________________________________________________________
+
+/*
+Originally, to get just the letter 'a', I did this function but in order to get the user's object's keyCode value,
+const audio = document.querySelector("audio[data-key=65]");
+    console.log(audio);
+
+I have to do this to get the user's value, specifically using templete literals... 
+const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    console.log(audio);
+*/
+
+___________________________________________________________________________________________________________
